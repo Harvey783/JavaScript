@@ -7,12 +7,23 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 // SOLUTION 1
+// reverse = str => {
+//   return str
+//     .split('')
+//     .reverse()
+//     .join('');
+// };
+// reverse('hello chris');
+
+// SOLUTION 2
+// 1) Create an empty string called Reversed 2) Iterate through the string 3) and for each character in the string take it and addd it to the start of Reversed 4) Return the variable Reversed.
+
 reverse = str => {
-  return str
-    .split('')
-    .reverse()
-    .join('');
+  let reversed = '';
+  for (let character of str) {
+    reversed = character + reversed;
+  }
+  return reversed;
 };
-reverse('hello chris');
 
 module.exports = reverse;
