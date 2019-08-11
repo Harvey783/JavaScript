@@ -1,3 +1,5 @@
+// jest reversestring/test.js --watch
+
 // --- Directions
 // Given a string, return a new string with the reversed
 // order of characters
@@ -26,6 +28,7 @@
 //   return reversed;
 // };
 
+// SOLUTION 3
 reverse = str => str.split('').reduce((rev, char) => char + rev, '');
 
 module.exports = reverse;
